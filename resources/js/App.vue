@@ -1,11 +1,18 @@
 <template>
     <div class="container"> 
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav">
-                    <router-link to="/" class="nav-item nav-link">Products List</router-link>
-                    <router-link to="/create" class="nav-item nav-link">Create Product</router-link>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <router-link to="/" class="nav-link">Products List<span class="sr-only">(current)</span></router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/create" class="nav-link">Create Product<span class="sr-only">(current)</span></router-link>
+                    </li>
+                </ul>
             </div>
         </nav>
 
