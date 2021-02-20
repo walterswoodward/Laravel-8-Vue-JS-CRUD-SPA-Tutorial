@@ -37841,35 +37841,28 @@ var render = function() {
     "div",
     { staticClass: "container" },
     [
-      _c(
-        "nav",
-        { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
-        [
-          _c("div", { staticClass: "collapse navbar-collapse" }, [
-            _c(
-              "div",
-              { staticClass: "navbar-nav" },
-              [
-                _c(
-                  "router-link",
-                  { staticClass: "nav-item nav-link", attrs: { to: "/" } },
-                  [_vm._v("Products List")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: { to: "/create" }
-                  },
-                  [_vm._v("Create Product")]
-                )
-              ],
-              1
-            )
-          ])
-        ]
-      ),
+      _c("nav", { staticClass: "navbar navbar-expand-lg navbar-dark" }, [
+        _c("div", { staticClass: "collapse navbar-collapse" }, [
+          _c(
+            "div",
+            { staticClass: "navbar-nav" },
+            [
+              _c(
+                "router-link",
+                { staticClass: "nav-item nav-link", attrs: { to: "/" } },
+                [_vm._v("Products List")]
+              ),
+              _vm._v(" "),
+              _c(
+                "router-link",
+                { staticClass: "nav-item nav-link", attrs: { to: "/create" } },
+                [_vm._v("Create Product")]
+              )
+            ],
+            1
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("router-view")
     ],
@@ -37902,11 +37895,12 @@ var render = function() {
   return _c("div", [
     _c("h2", { staticClass: "text-center" }, [_vm._v("Products List")]),
     _vm._v(" "),
-    _c("table", { staticClass: "table" }, [
+    _c("table", { staticClass: "table text-light" }, [
       _vm._m(0),
       _vm._v(" "),
       _c(
         "tbody",
+        { staticClass: "text-light" },
         _vm._l(_vm.products, function(product) {
           return _c("tr", { key: product.id }, [
             _c("td", [_vm._v(_vm._s(product.id))]),
@@ -37918,7 +37912,7 @@ var render = function() {
             _c("td", [
               _c(
                 "div",
-                { staticClass: "btn-group", attrs: { role: "group" } },
+                { staticClass: "btn-group-sm", attrs: { role: "group" } },
                 [
                   _c(
                     "router-link",
@@ -37960,12 +37954,14 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("thead", [
-      _c("tr", [
+      _c("tr", { staticClass: "text-light" }, [
         _c("th", [_vm._v("ID")]),
         _vm._v(" "),
         _c("th", [_vm._v("Name")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Detail")])
+        _c("th", [_vm._v("Detail")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Actions")])
       ])
     ])
   }
