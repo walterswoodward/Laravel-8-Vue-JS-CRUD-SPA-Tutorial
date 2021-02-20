@@ -6,6 +6,8 @@
 
 require('./bootstrap');
 
+import Vue from 'vue/dist/vue'
+
 window.Vue = require('vue').default;
 
 /**
@@ -21,7 +23,7 @@ window.Vue = require('vue').default;
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('app', require('./components/App.vue').default);
-import App from './components/App.vue';
+import App from './App.vue';
 import VueAxios from 'vue-axios';
 import VueRouter from 'vue-router';
 import axios from 'axios';
